@@ -12,6 +12,13 @@ function intercambio(objeto) {
   //
   // Tu código:
 
+  const nuevoObj = {};
+  for (let clave in obj) {
+    const valor = obj[clave];
+    nuevoObj[valor] = clave;
+  }
+  return nuevoObj;
+}
 };
 
 // No modifiques nada debajo de esta linea //
