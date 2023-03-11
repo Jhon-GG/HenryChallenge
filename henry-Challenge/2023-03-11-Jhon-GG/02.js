@@ -23,40 +23,36 @@ function ingredienteEnMalEstado(menu, comida, ingrediente) {
   //
   // Tu código:
   
-  function revisarMenu(menu, ingrediente) {
-  // Buscamos el índice del ingrediente en la comida
-  const indice = menu.findIndex(comida => comida.includes(ingrediente));
+  function ingredienteEnMalEstado(menu, comida, ingrediente) {
 
-  // Si el ingrediente no está en la comida, retornamos "El menú está perfecto"
+  const indice = menu.findIndex(comida => comida.includes(ingrediente));
+    
   if (indice === -1) {
     return "El menú está perfecto";
   }
 
-  // Si el ingrediente está en la comida, obtenemos los ingredientes próximos contaminados
   const ingredientesProximos = [];
 
-  // Iteramos desde el índice anterior hasta el índice siguiente
   for (let i = indice - 1; i <= indice + 1; i++) {
-    // Si el índice es válido y no estamos repitiendo el ingrediente contaminado, agregamos los ingredientes al array
+    
+    
     if (i >= 0 && i < menu.length && i !== indice) {
       ingredientesProximos.push(...menu[i]);
     }
   }
 
-  // Agregamos el ingrediente contaminado al array y lo retornamos
   ingredientesProximos.push(ingrediente);
   return ingredientesProximos;
 }
 
-// Ejemplo de uso
 const menu = [
   ['tomate', 'cebolla', 'ajo'],
   ['papa', 'zanahoria', 'cebolla', 'lechuga'],
   ['manzana', 'banana', 'kiwi']
 ];
 
-const ingredienteEnMalEstado = 'papa';
-const resultado = revisarMenu(menu, ingredienteEnMalEstado);
+const malEstado = 'papa';
+const resultado = revisarMenu(menu, malEstado);
 console.log(resultado); // debería mostrar ['zanahoria', 'cebolla', 'lechuga', 'papa'] 
 
 
