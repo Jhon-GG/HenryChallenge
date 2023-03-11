@@ -19,6 +19,7 @@ function buscaDestruye(arreglo, num) {
   
 };
 
+
 // No modifiques nada debajo de esta linea //
 
 module.exports = buscaDestruye
