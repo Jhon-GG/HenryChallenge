@@ -30,14 +30,11 @@ function mayorMenosMenor(arr) {
 
 
   return maxNumber - minNumber;
-}
 
 const array = [4, 7, 1, 9, 2, 5];
 const difference = mayorMenosMMenor(arr);
 console.log(difference); 
 
-
-};
 
 // No modifiques nada debajo de esta linea //
 
