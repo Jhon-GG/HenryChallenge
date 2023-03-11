@@ -28,18 +28,6 @@ function mayorMenosMenor(arr) {
   };
 }
 
-function mayorMenosMMenor(arr) {
-  let minNumber = array[0];
-  let maxNumber = array[0];
-
-  for (let i = 1; i < array.length; i++) {
-    if (array[i] < minNumber) {
-      minNumber = array[i];
-    }
-    if (array[i] > maxNumber) {
-      maxNumber = array[i];
-    }
-  }
 
   return maxNumber - minNumber;
 }
