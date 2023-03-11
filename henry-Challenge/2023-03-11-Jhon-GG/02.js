@@ -23,7 +23,6 @@ function ingredienteEnMalEstado(menu, comida, ingrediente) {
   //
   // Tu código:
   
-  function ingredienteEnMalEstado(menu, comida, ingrediente) {
 
   const indice = menu.findIndex(comida => comida.includes(ingrediente));
     
