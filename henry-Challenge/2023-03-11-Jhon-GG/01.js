@@ -10,7 +10,6 @@ function mayorMenosMenor(arr) {
   //
   // Tu código:
   
-  function mayorMenosMenor(arr) {
   let minNumber = array[0];
   let maxNumber = array[0];
 
