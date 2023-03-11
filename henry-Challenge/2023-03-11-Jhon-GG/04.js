@@ -18,6 +18,10 @@ function obtenerSoloLosMejores(estudiantes, nota1, nota2) {
   //
   // Tu código:
   
+  const estudiantesFiltrados = estudiantes.filter(estudiante => estudiante.check1 >= nota1 && estudiante.check2 >= nota2);
+  const resultado = estudiantesFiltrados.map(estudiante => `${estudiante.nombre} ${estudiante.apellido}`);
+  return resultado;
+
 };
 
 // No modifiques nada debajo de esta linea //
