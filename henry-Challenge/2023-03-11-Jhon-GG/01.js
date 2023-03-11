@@ -9,6 +9,46 @@ function mayorMenosMenor(arr) {
   // NOTA: No utilizar los métodos "min" y "max" de "Math".
   //
   // Tu código:
+  
+  function mayorMenosMMenor(arr) {
+  let minNumber = array[0];
+  let maxNumber = array[0];
+
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < minNumber) {
+      minNumber = array[i];
+    }
+    if (array[i] > maxNumber) {
+      maxNumber = array[i];
+    }
+  }
+
+  return {
+    min: minNumber,
+    max: maxNumber
+  };
+}
+
+function mayorMenosMMenor(arr) {
+  let minNumber = array[0];
+  let maxNumber = array[0];
+
+  for (let i = 1; i < array.length; i++) {
+    if (array[i] < minNumber) {
+      minNumber = array[i];
+    }
+    if (array[i] > maxNumber) {
+      maxNumber = array[i];
+    }
+  }
+
+  return maxNumber - minNumber;
+}
+
+const array = [4, 7, 1, 9, 2, 5];
+const difference = mayorMenosMMenor(arr);
+console.log(difference); // debe mostrar 8
+
 
 };
 
