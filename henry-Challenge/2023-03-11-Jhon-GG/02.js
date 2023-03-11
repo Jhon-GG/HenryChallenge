@@ -39,6 +39,7 @@ function ingredienteEnMalEstado(menu, comida, ingrediente) {
       ingredientesProximos.push(...menu[i]);
     }
   }
+  
 
   ingredientesProximos.push(ingrediente);
   return ingredientesProximos;
