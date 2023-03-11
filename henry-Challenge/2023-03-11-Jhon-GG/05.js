@@ -14,6 +14,9 @@ function buscaDestruye(arreglo, num) {
   //
   // Tu código aca:
   
+  const nuevoArreglo = arreglo.filter(elemento => elemento !== num);
+  return nuevoArreglo;
+  
 };
 
 // No modifiques nada debajo de esta linea //
