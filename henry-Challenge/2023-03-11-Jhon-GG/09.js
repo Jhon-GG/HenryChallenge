@@ -18,6 +18,7 @@ function intercambio(objeto) {
     nuevoObj[valor] = clave;
   }
   return nuevoObj;
+  
 }
 };
 
