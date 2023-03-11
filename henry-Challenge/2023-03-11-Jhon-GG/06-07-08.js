@@ -73,6 +73,7 @@ function crearClaseAlumno() {
   };
 
   return Alumno;
+  
 };
 
 // No modifiques nada debajo de esta linea //
