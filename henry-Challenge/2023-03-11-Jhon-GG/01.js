@@ -47,7 +47,7 @@ function mayorMenosMMenor(arr) {
 
 const array = [4, 7, 1, 9, 2, 5];
 const difference = mayorMenosMMenor(arr);
-console.log(difference); // debe mostrar 8
+console.log(difference); 
 
 
 };
