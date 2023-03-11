@@ -29,6 +29,7 @@ function mayorMenosMenor(arr) {
 }
 
 
+
   return maxNumber - minNumber;
 
 const array = [4, 7, 1, 9, 2, 5];
