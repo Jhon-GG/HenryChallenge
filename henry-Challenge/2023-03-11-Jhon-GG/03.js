@@ -23,6 +23,7 @@ function bienvenidoSr(persona) {
   //
   // Tu código:
 
+  
   if (persona.invitado && persona.nombre && persona.apellido) {
     return `${persona.nombre} ${persona.apellido}, un gusto tenerlo nuevamente! Bienvenido`;
   } else if (persona.invitado && persona.apellido) {
